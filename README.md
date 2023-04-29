@@ -1,4 +1,59 @@
-# HeroesappIsmetles
+# Heroesapp
+
+Check at here in live: https://angular-heroesapp-somossy-laszlo.netlify.app/
+
+
+following CLi commads:
+ng new heroesapp --routing --style=css
+
+npm install bootstrap
+npm install jquery
+npm install popper.js
+npm i guid-typescript
+
+képek kezelése javascriptben, új anyag
+
+
+tervezés:
+
+class:
+   hero(id: string, name: string, isGood: boolean, power: number, imageBase64: string)
+
+component:
+  create
+  list(komponensek egymásba ágyazásával)	
+
+service:
+  heroservice
+    heroes: Array<Hero> - összes hős
+    create(h: Hero) - elmenti a gyűjteménybe
+    load() localstoreageból betölt
+    save() localstoreageból kiment
+
+ng g class hero
+ng g c create
+ng g c list
+ng g s hero
+
+BOOTSTRAP IMPLEMENTÁLÁSA:
+
+(angular.json-be)
+
+styles:
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+scripts:
+"node_modules/jquery/dist/jquery.min.js"
+"node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+(amikor olyan dolgot csinálunk, hogy a cmdbe hozzáadjuk akkor a live dev szervert ujra kell inditani és akkor látszik a hatása csak)
+
+
+CardComponent input és output értékei
+
+(input) <[hero]>	cardcomponent <(deleted)> (output)
+
+tehát minden componensnek be és kimeneti értekei vannak
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
