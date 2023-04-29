@@ -1,0 +1,24 @@
+<!-- <input (change)="photoUpload($event)" multiple type="file" />
+
+<div *ngFor="let x of this.pictureDatas">
+  <img src="{{x}}" width="200">
+</div>  -->
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="list">List heroes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="create">Create heroes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

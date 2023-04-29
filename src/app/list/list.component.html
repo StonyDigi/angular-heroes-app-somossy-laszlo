@@ -1,0 +1,7 @@
+<h1>Your heroes</h1>
+<div class="row">
+<div class="col-sm-12" >
+    <app-card class="pc" *ngFor="let x of this.service.heroes" 
+    [hero]="x" (deleted)="this.service.delete($event)"></app-card>
+</div>
+</div>

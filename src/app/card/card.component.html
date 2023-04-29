@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{hero.imageBase64}}" alt="Card image heroes...">
+    <div class="card-body">
+      <h5 class="card-title">{{hero.name}}</h5>
+      <label class="form-label" style="font-weight: bold;">power:</label>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+        <div class="progress-bar" [style]="getPercentage(hero)">{{hero.power}}</div>
+      </div>
+      <a (click)="this.deleted.emit(hero.id)" class="btn btn-danger mt-5">Delete</a>
+    </div>	

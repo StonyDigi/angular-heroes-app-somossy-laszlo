@@ -1,0 +1,27 @@
+
+    <h1>Create hero</h1>
+    <div class="mb-3">
+      <label class="form-label">Hero name</label>
+      <input type="text" class="form-control" [(ngModel)]="this.actual.name" />
+    </div>
+    <div class="mb-3 form-check">
+       <input type="checkbox" class="form-check-input" [(ngModel)]="this.actual.isGood">
+       <label class="form-check-label">Good character</label> 
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Hero power</label>
+      <input type="range" min="1" max="10" class="form-range" [(ngModel)]="this.actual.power" />
+      <div style="text-align: center; margin-top: 5px;">{{this.actual.power}}</div>
+    </div>
+    <div class="mb-3">
+       <label class="form-label">Hero picture</label>
+       <input type="file" (change)="photoUpload($event)" class="form-control"> 
+    </div>
+
+    <div *ngIf="this.actual.imageBase64 != ''">
+    <img src="{{this.actual.imageBase64}}" widhth="150" height="150" alt="">
+    <br>
+    <br>
+    <button type="button" (click)="create()" class="btn btn-primary">Create</button>
+    </div>
+    

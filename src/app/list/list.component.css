@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pc {
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 5px 15px 25px black;
+    border-radius: 10px;
+}
